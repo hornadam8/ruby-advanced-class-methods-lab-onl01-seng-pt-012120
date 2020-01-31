@@ -34,8 +34,9 @@ class Song
   end
   
   def self.new_from_filename(file)
-    word = Song.new
-    
+    self.create
+    @@all[-1].name = (file.split(" - ")[1].chomp(".mp3"))
+    @@all[-1].artist_name = (file.split(" - ")[0])
   end
   
   def self.all
