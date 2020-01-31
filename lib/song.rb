@@ -40,6 +40,9 @@ class Song
     @@all[-1]
   end
   
+  def self.create_from_filname
+    
+  
   def self.all
     @@all
   end
