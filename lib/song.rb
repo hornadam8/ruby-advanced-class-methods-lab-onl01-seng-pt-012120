@@ -47,6 +47,10 @@ class Song
     @@all[-1]
   end
   
+  def self.destroy_all
+    @@all = []
+  end
+  
   def self.all
     @@all
   end
